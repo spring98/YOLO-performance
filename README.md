@@ -3,6 +3,8 @@
 
 기존 앱의 실시간 추론 성능, 발열문제, 모델 정확성 문제를 개선하기 위해 많은 고민을 하였습니다.
 
+<br/>
+
 해당 레포지토리는 전체코드가 아니며, 사용했던 모델 및 라이브러리의 타당성을 설명하기 위한 데모 임을 알립니다.
 
 <br/>
@@ -11,9 +13,27 @@
 
 YOLO 버전, 라이브러리, 모델 사이즈 별 성능 비교
 
-https://github.com/spring98/YOLO-performance/assets/92755385/eb1efa08-71a4-469c-a283-4ce537167f95
-https://github.com/spring98/YOLO-performance/assets/92755385/163c598c-0229-41f7-a6f0-9c11c58151ba
-https://github.com/spring98/YOLO-performance/assets/92755385/db42cf6a-44df-44dd-8dee-bc6cf4440754
+<div align="center">
+  <table>
+    <tr>
+      <td>
+        <img src="https://github.com/spring98/YOLO-performance/assets/92755385/92a68851-cfd0-4971-9b7e-b2254600b975">
+        <br>
+        <p align="center"> YOLOv5 (320*320) Pytorch YOLOv5 (320*320) TFLite YOLOv7 (640*640) TFLite </p>
+      </td>
+        <td>
+        <img src="https://github.com/spring98/YOLO-performance/assets/92755385/f55a92c5-b5bb-404e-ab9b-2141377a6ed3">
+        <br>
+        <p align="center"> YOLOv5 (320*320) Pytorch YOLOv5 (320*320) TFLite YOLOv7 (640*640) TFLite </p>
+      </td>
+        <td>
+        <img src="https://github.com/spring98/YOLO-performance/assets/92755385/feba99ad-99cf-4667-aaaf-58abb8aa8c8c">
+        <br>
+        <p align="center"> YOLOv5 (320*320) Pytorch YOLOv5 (320*320) TFLite YOLOv7 (640*640) TFLite </p>
+      </td>
+    </tr>
+  </table>
+</div>
 
 <br/>
 
@@ -146,7 +166,7 @@ AGI 를 사용하여 생성되는 로그의 파일 크기가 너무 커 10분씩
 
 1. AGI 를 이용하여 CPU, GPU, 배터리 사용량 등을 .perfetto 파일로 저장
 2. .perfetto 파일을 traceconv 프로그램으로 .txt 파일로 변환
-3. 해당 텍스트 파일의 데이터는 좌측 사진과 같으며 전류 사용량은 표시한 영역과 같습니다. current_ua 의 값이 음수이면 current in 으로 충전되고 있음을 나타내며, 양수는 사용한 전류값을 나타냅니다. 단위는 마이크로 암페어입니다.
+3. 해당 텍스트 파일의 데이터는 위의 사진들과 같으며 전류 사용량은 표시한 영역과 같습니다. current_ua 의 값이 음수이면 current in 으로 충전되고 있음을 나타내며, 양수는 사용한 전류값을 나타냅니다. 단위는 마이크로 암페어입니다.
 4. 에너지 사용량은 전압 * 전류 * 사용한 시간 이므로 테스트에 사용한 Galaxy S10 의 배터리 전압 3.7V * current_ua * packet time stamp 차이 를 구해서 모두 더하면 됩니다. (단위 주의) 
 
 <br/>
