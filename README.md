@@ -19,17 +19,17 @@ YOLO 버전, 라이브러리, 모델 사이즈 별 성능 비교
       <td>
         <img src="https://github.com/spring98/YOLO-performance/assets/92755385/92a68851-cfd0-4971-9b7e-b2254600b975">
         <br>
-        <p align="center"> YOLOv5 (320*320) Pytorch YOLOv5 (320*320) TFLite YOLOv7 (640*640) TFLite </p>
+        <p align="center"> YOLOv5 (320*320) Pytorch </p>
       </td>
         <td>
         <img src="https://github.com/spring98/YOLO-performance/assets/92755385/f55a92c5-b5bb-404e-ab9b-2141377a6ed3">
         <br>
-        <p align="center"> YOLOv5 (320*320) Pytorch YOLOv5 (320*320) TFLite YOLOv7 (640*640) TFLite </p>
+        <p align="center"> YOLOv5 (320*320) TFLite </p>
       </td>
         <td>
         <img src="https://github.com/spring98/YOLO-performance/assets/92755385/feba99ad-99cf-4667-aaaf-58abb8aa8c8c">
         <br>
-        <p align="center"> YOLOv5 (320*320) Pytorch YOLOv5 (320*320) TFLite YOLOv7 (640*640) TFLite </p>
+        <p align="center"> YOLOv7 (640*640) TFLite </p>
       </td>
     </tr>
   </table>
